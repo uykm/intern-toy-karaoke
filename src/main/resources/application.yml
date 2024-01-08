@@ -4,6 +4,6 @@ spring:
       ddl-auto: create-drop
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: ${MARIADB_URL}
+    url: jdbc:mariadb://${MARIADB_HOST}:${MARIADB_PORT}/${MARIADB_DATABASE}
     username: ${MARIADB_USERNAME}
     password: ${MARIADB_PASSWORD}
