@@ -1,6 +1,6 @@
-package com.musibe.intern.karaoke.api.greet;
+package com.musibe.intern.karaoke.api;
 
-import com.musibe.intern.karaoke.api.greet.vos.SaveRequest;
+import com.musibe.intern.karaoke.api.request.SaveRequest;
 import com.musibe.intern.karaoke.domain.todo.Todo;
 import java.util.List;
 import org.springframework.http.ResponseEntity;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/greet")
+@RequestMapping("/api")
 public class TodoRestController {
 
     @GetMapping("/{id}")
